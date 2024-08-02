@@ -1,0 +1,336 @@
+/* Establece el comportamiento de desplazamiento para que no sea suave */
+{
+  scroll-behavior: auto !important;
+}
+
+/* Estilo global para el cuerpo del documento */
+body {
+  font-family: 'Helvetica'; /* Fuente principal para el cuerpo */
+}
+
+/* Navbar (barra de navegación) */
+.navbar {
+  background-color: #A424A4; /* Color de fondo de la barra de navegación */
+  position: fixed; /* Fija la posición de la barra de navegación */
+  width: 100vw; /* La barra ocupa el 100% del ancho de la ventana */
+  z-index: 1; /* Coloca la barra sobre otros elementos */
+}
+
+.navbar-brand {
+  font-family: 'Oswald'; /* Fuente específica para la marca de la barra de navegación */
+  font-size: 40px; /* Tamaño de fuente grande */
+  font-weight: 700; /* Fuente en negrita */
+}
+
+/* Hero Section (sección principal) */
+.hero-line {
+  width: 345px; /* Ancho de la línea en la sección hero */
+}
+
+#Hero-Section h1 {
+  font-family: 'Oswald'; /* Fuente específica para los títulos en la sección hero */
+  font-size: 72px; /* Tamaño de fuente muy grande */
+}
+
+#Hero-Section h1:first-child {
+  font-weight: 200; /* Fuente más delgada para el primer título */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra de texto para el primer título */
+}
+
+#Hero-Section h1:last-child {
+  font-weight: 900; /* Fuente más gruesa para el último título */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra de texto para el último título */
+}
+
+.carousel-inner img {
+  height: 650px; /* Altura de las imágenes en el carrusel */
+  width: 100%; /* Las imágenes ocupan el 100% del ancho del contenedor */
+  object-fit: cover; /* Las imágenes se recortan para ajustarse al contenedor */
+}
+
+/* Sobre Mi (sección sobre mí) */
+#Sobre-Mi {
+  padding-top: 6rem; /* Aumenta el espacio superior adicional para la sección */
+  color: #514b4c; /* Color del texto */
+  font-family: "Open Sans"; /* Fuente específica para la sección sobre mí */
+  line-height: 1.6; /* Altura de línea ajustada para mejor legibilidad */
+  font-size: 18px; /* Tamaño de la letra en la sección sobre mí */
+}
+
+#Sobre-Mi .text-center h4 {
+  margin-top: 5rem; /* Aumenta el espacio superior específico para el título */
+}
+
+#Sobre-Mi img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#Sobre-Mi .hover-text {
+  transition: transform 0.3s ease; /* Transición suave para el movimiento */
+}
+
+#Sobre-Mi .hover-text:hover {
+  transform: translateX(5px); /* Mueve el texto 5px hacia la derecha al pasar el ratón */
+}
+
+
+/* Curriculum (sección del currículum) */
+
+#Curriculum {
+  padding-top: 4rem; /* Espacio superior adicional para la sección */
+}
+
+#Curriculum .text-center h1 {
+  margin-top: 3rem; /* Espacio superior específico para el título */
+}
+
+#Curriculum {
+  background-color: #887988; /* Color de fondo de la sección del currículum */
+  font-family: 'Oswald'; /* Fuente específica para la sección del currículum */
+  font-size: 20px; /* Tamaño de la letra en la sección del currículum */
+  color: white; /* Color del texto */
+}
+
+#Curriculum .fw-bold {
+  font-weight: bold; /* Fuente en negrita */
+}
+
+#Curriculum .text-uppercase {
+  text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+#Curriculum i {
+  color: white; /* Ajusta el color de los íconos según sea necesario */
+}
+
+
+/* Mi experiencia */
+
+#Experiencia div h1 {
+  font-family: 'Oswald'; /* Fuente específica para los títulos en la sección de experiencia */
+  font-size: 52px; /* Tamaño de fuente grande para los títulos */
+}
+
+#Experiencia i {
+  color: #887988; /* Color de los iconos en la sección de experiencia */
+}
+
+#Experiencia div:last-child article h4:first-child {
+  font-family: 'Oswald'; /* Fuente específica para el primer subtítulo en la sección de experiencia */
+  font-size: 24px; /* Tamaño de la letra en la sección de experiencia */
+}
+
+#Experiencia div:last-child article h4:last-child {
+  font-family: 'Open Sans'; /* Fuente específica para el segundo subtítulo en la sección de experiencia */
+  font-weight: 300; /* Fuente más delgada */
+  font-size: 20px; /* Tamaño de la letra en la sección de experiencia */
+}
+
+/* Habilidades */
+#Habilidades {
+  padding-top: 4rem; /* Espacio superior adicional para la sección */
+}
+
+#Habilidades .text-center h1 {
+  margin-top: 3rem; /* Espacio superior específico para el título */
+}
+
+
+#Habilidades .card {
+  background-color: #f8f9fa; /* Color de fondo de las tarjetas */
+  border: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+  transition: transform 0.2s ease-in-out; /* Transición suave */
+}
+
+#Habilidades .card:hover {
+  transform: translateY(-10px); /* Desplaza la tarjeta hacia arriba al pasar el cursor */
+}
+
+#Habilidades .card-body {
+  padding: 20px; /* Espaciado dentro de la tarjeta */
+}
+
+#Habilidades .card-title {
+  font-weight: bold; /* Fuente en negrita */
+  font-size: 1.5rem; /* Tamaño de fuente para el título */
+}
+
+#Habilidades i {
+  color: #333; /* Ajusta el color de los íconos según tu diseño */
+}
+
+#Habilidades .card-text {
+  font-size: 1.25rem; /* Tamaño de fuente para la descripción */
+  transition: transform 0.3s ease-in-out; /* Transición para el texto */
+}
+
+#Habilidades .card:hover .card-text {
+  transform: translateX(10px); /* Mueve el texto ligeramente hacia la derecha al pasar el cursor */
+}
+
+#Habilidades .skill-card {
+  border: 1px solid #ddd; /* Bordes ligeros para las tarjetas */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta el desbordamiento de contenido */
+  transition: box-shadow 0.3s ease; /* Transición suave para sombra */
+}
+
+#Habilidades .skill-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+#Habilidades .skill-icon {
+  width: 40px; /* Ancho uniforme para todos los íconos */
+  height: auto; /* Mantener la proporción del ícono */
+}
+
+/* Mis últimos trabajos (sección de trabajos) */
+
+#Trabajos {
+  padding-top: 4rem; /* Espacio superior adicional para la sección */
+}
+
+#Trabajos .text-center h1 {
+  margin-top: 3rem; /* Espacio superior específico para el título */
+}
+
+#Trabajos {
+  background-color: #887988; /* Color de fondo de la sección de trabajos */
+  font-family: 'Oswald'; /* Fuente específica para la sección de trabajos */
+  font-size: 20px; /* Tamaño de la letra en la sección de trabajos */
+  color: white; /* Color del texto */
+}
+
+#Trabajos h1 {
+  font-size: 36px; /* Tamaño del título */
+}
+
+#Trabajos .card {
+  border-radius: 0.5rem; /* Bordes redondeados */
+  overflow: hidden; /* Ocultar desbordamiento */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transición para suavizar cambios */
+}
+
+#Trabajos .card:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más notable al pasar el mouse */
+}
+
+#Trabajos .card-img-top {
+  width: 100%;
+  height: 200px; /* Altura ajustada para hacer las tarjetas más pequeñas */
+  object-fit: cover; /* Mantener la imagen dentro del contenedor sin deformar */
+}
+
+#Trabajos .card-body {
+  padding: 1rem; /* Espaciado dentro de la tarjeta */
+}
+
+#Trabajos .card-title {
+  font-size: 1.1rem; /* Tamaño de fuente del título */
+  font-weight: bold; /* Fuente en negrita */
+  margin-bottom: 0.5rem; /* Espacio debajo del título */
+}
+
+#Trabajos .card-text {
+  font-size: 0.9rem; /* Tamaño de fuente del texto */
+  font-weight: lighter; /* Fuente más delgada */
+  margin-bottom: 0; /* Eliminar el margen inferior */
+}
+
+#Trabajos .stretched-link {
+  color: inherit; /* Mantener el color del texto */
+  text-decoration: none; /* Quitar subrayado */
+}
+
+#Trabajos .stretched-link:hover {
+  text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+#Trabajos .shadow-sm {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra más sutil para un look formal */
+}
+
+
+/* Contacto (sección de contacto) */
+
+#Contacto {
+  padding-top: 4rem; /* Espacio superior adicional para la sección */
+}
+
+#Contacto .text-center h1 {
+  margin-top: 3rem; /* Espacio superior específico para el título */
+}
+
+#Contacto h1 {
+  font-family: 'Oswald'; /* Fuente específica para los títulos en la sección de contacto */
+  font-size: 52px; /* Tamaño de fuente grande para los títulos en la sección de contacto */
+}
+
+#Contacto .--form-text2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+#Contacto .form-container {
+  margin-left: 10px; /* Ajusta el valor según sea necesario */
+}
+
+#Contacto .form-contact {
+  padding: 15px;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+#Contacto .border-purple {
+  border: 2px solid purple !important;
+}
+
+#Contacto .form-text {
+  background-color: #f1f1f1; /* Color de fondo del texto del formulario */
+  border: 1px solid #ccc; /* Borde del formulario */
+  padding: 10px;
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño de la letra */
+}
+
+#Contacto .form-text:focus {
+  outline: none; /* Eliminar borde de enfoque */
+  border-color: #007bff; /* Color de borde al enfocar */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra de caja al enfocar */
+}
+
+#Contacto .form-submit {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  padding: 10px 20px;
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a mano al pasar el ratón */
+}
+
+#Contacto .form-submit:hover {
+  background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}
+
+
+/* Footer (pie de página) */
+#Footer {
+  background-color: #A424A4; /* Color de fondo del pie de página */
+}
+
+#Footer h1 {
+  font-family: 'Oswald'; /* Fuente específica para los títulos en el pie de página */
+}
+
+#Footer a {
+  color: white; /* Color del texto de los enlaces en el pie de página */
+  text-decoration: none; /* Sin subrayado para los enlaces */
+  font-size: 16px; /* Tamaño de la letra en el pie de página */
+}
+
+#footer p {
+  margin: 0;
+  text-align: center;
+}
